@@ -1,0 +1,223 @@
+<html><head>
+		<title></title>
+	</head>
+	<body><title></title>
+<title></title>
+<title></title>
+<title></title>
+<title></title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&amp;family=Lora:wght@600&amp;display=swap" rel="stylesheet">
+<style type="text/css">
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }    body {
+      font-family: 'Raleway', Georgia, sans-serif;
+      background: #F5F9FF;
+      color: #2c2c2c;
+      min-height: 100vh;
+      padding: 2.5rem 1.5rem 4rem;
+    }    .portal { max-width: 960px; margin: 0 auto; }    .header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
+      border-bottom: 1.5px solid #BBDEFB;
+    }
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: #E3F2FD;
+      color: #1565C0;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: 1px solid #BBDEFB;
+    }
+    .header h1 {
+      font-family: 'Lora', Georgia, serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: #1565C0;
+      letter-spacing: -0.5px;
+      margin-bottom: 6px;
+    }
+    .header p {
+      font-size: 13px;
+      color: #5C8DB8;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }    .card {
+      background: #ffffff;
+      border: 1px solid #BBDEFB;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover { border-color: #90CAF9; box-shadow: 0 4px 20px rgba(33,150,243,0.1); }    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 16px;
+      border-bottom: 1px solid #BBDEFB;
+      background: #FAFCFF;
+    }
+    .card-icon {
+      width: 32px; height: 32px;
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      background: #E3F2FD;
+    }
+    .card-icon svg { width: 17px; height: 17px; stroke: #2196F3; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+    .card-title { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #1976D2; }    .card-body { padding: 8px 6px; }    .link-item {
+      display: flex; align-items: center; gap: 8px;
+      padding: 7px 10px; border-radius: 7px;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .link-item:hover { background: #E3F2FD; }
+    .link-num { font-size: 11px; font-weight: 700; color: #90CAF9; min-width: 20px; flex-shrink: 0; }
+    .link-text { font-size: 13px; color: #2c2c2c; line-height: 1.4; flex: 1; font-weight: 400; }
+    .link-item:hover .link-text { color: #1565C0; }
+    .link-arrow { flex-shrink: 0; opacity: 0; transition: opacity 0.15s; }
+    .link-arrow svg { width: 13px; height: 13px; stroke: #2196F3; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    .link-item:hover .link-arrow { opacity: 1; }    .vtr-card { border: 1.5px solid #2196F3; }
+    .vtr-card .card-header { background: #E3F2FD; border-bottom: 1px solid #90CAF9; }
+    .vtr-link {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 12px; text-decoration: none;
+      border-radius: 9px; margin: 6px;
+      transition: background 0.15s;
+    }
+    .vtr-link:hover { background: #E3F2FD; }
+    .vtr-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: #2196F3;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .vtr-icon svg { width: 22px; height: 22px; stroke: #fff; fill: none; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+    .vtr-text { font-size: 15px; font-weight: 600; color: #1565C0; flex: 1; }
+    .vtr-badge { font-size: 11px; font-weight: 700; background: #2196F3; color: #fff; padding: 3px 10px; border-radius: 12px; flex-shrink: 0; }    .wide { grid-column: 1 / -1; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4px; }    .footer { text-align: center; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #BBDEFB; font-size: 12px; color: #90CAF9; letter-spacing: 0.04em; }    @media (max-width: 600px) {
+      .header h1 { font-size: 30px; }
+      .two-col { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+    }</style>
+<div class="portal">
+	<div class="header">
+		<div class="header-badge">
+			<svg fill="none" height="13" stroke="#1565C0" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 21v-4a2 2 0 0 1 4 0v4"></path></svg> Saint Mark's Coptic Orthodox College
+		</div>
+		<h1>SMC — Staff Portal</h1>
+		<p>Forms, resources &amp; tools</p>
+	</div>
+	<div class="grid">
+		<!-- VTR FORM -->
+		<div class="card vtr-card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"></path><rect height="4" rx="2" width="6" x="9" y="3"></rect><path d="m9 14 2 2 4-4"></path></svg>
+				</div><span class="card-title">VTR Form</span>
+			</div>
+			<div class="card-body">
+				<div class="vtr-icon">
+					<a class="vtr-link" href="https://docs.google.com/forms/d/e/1FAIpQLSe6C7V1v7Y-QQQZGsYXCpYGqYTjKOUiRh1VLDSgRHGrnZJvmA/viewform" target="_blank"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" x2="8" y1="13" y2="13"></line><line x1="16" x2="8" y1="17" y2="17"></line></svg></a>
+				</div><a class="vtr-link" href="https://docs.google.com/forms/d/e/1FAIpQLSe6C7V1v7Y-QQQZGsYXCpYGqYTjKOUiRh1VLDSgRHGrnZJvmA/viewform" target="_blank"><span class="vtr-text">2026 Variation to Routine</span> <span class="vtr-badge">2026</span></a>
+			</div>
+		</div><!-- CURRICULUM -->
+		<div class="card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+				</div><span class="card-title">Curriculum</span>
+			</div>
+			<div class="card-body">
+				<a class="link-item" href="https://calendar.google.com/calendar/u/2?cid=Y183aDBrb2FqZWE5NTdqdmgzdXNmcmU1YjRuOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank"><span class="link-num">01</span><span class="link-text">MAD Calendar 2026</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://stmarkscoptic-college.boxofbooks.io/auth/page/signin" target="_blank"><span class="link-num">02</span><span class="link-text">Box of Books</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/13B8sojokuudV2WX_jBWFf0-nvlqW0Vwm/view?usp=sharing" target="_blank"><span class="link-num">03</span><span class="link-text">Year 7–10 Assessment Handbook 2026</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1R9ZJTMbKIShEIhGTYT6ajZXA0f7lu83t/view?usp=sharing" target="_blank"><span class="link-num">04</span><span class="link-text">Year 11–12 Assessment Handbook 2025–2026</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://stmarks-past-papers.web.app/" target="_blank"><span class="link-num">05</span><span class="link-text">SMC Past Papers</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://docs.google.com/spreadsheets/d/13fpA4kZWU1wTQi6CM_RbySV3V8GUh-gC-8Qx6f4dNSQ/edit?usp=sharing" target="_blank"><span class="link-num">06</span><span class="link-text">2026 Provisions Access</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div><!-- ADMINISTRATION -->
+		<div class="card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><path d="M3 21h18"></path><path d="M5 21V7l7-4 7 4v14"></path><path d="M9 21v-4a2 2 0 0 1 4 0v4"></path></svg>
+				</div><span class="card-title">Administration</span>
+			</div>
+			<div class="card-body">
+				<a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLSfNBCF6uw9irVu8wRDQ9VHGsX_YnJMzBU94JKHltMhR3HHPgw/viewform?pli=1" target="_blank"><span class="link-num">01</span><span class="link-text">Staff 3D Printing Requests</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1Vms0ti9_hrSiz6iClbykOhthwHNlp1kP/view" target="_blank"><span class="link-num">02</span><span class="link-text">Student Accident &amp; Injury Incident Report</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf7lZ6ih8HA2TbFxLJfYe3bhHEtraqPnhkFXbGir5qmTNAXCA/viewform?vc=0&amp;c=0&amp;w=1&amp;flr=0" target="_blank"><span class="link-num">03</span><span class="link-text">Counsellor — Referral</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf6l0ABZ8kyUNobNh-CDfE2RCm49suoDvCFunpNDWPPQMeEug/viewform" target="_blank"><span class="link-num">04</span><span class="link-text">Production Room Request</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLScTsDYsblG4au6QrhNOPlOZIzvktivMbG1gA3Mes8x5YN8dLw/viewform?usp=header" target="_blank"><span class="link-num">05</span><span class="link-text">Secondary IEP Referral Form</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div><!-- FINANCE -->
+		<div class="card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><line x1="12" x2="12" y1="1" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+				</div><span class="card-title">Finance</span>
+			</div>
+			<div class="card-body">
+				<a class="link-item" href="https://forms.gle/U2qEHrsSKjXdJFA47" target="_blank"><span class="link-num">01</span><span class="link-text">Purchase Order Request</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLSf16H7j5AStJ5se7ymjNp-0z7ldbXTpsXeTEScDDMHtKuMC0w/viewform" target="_blank"><span class="link-num">02</span><span class="link-text">Staff Reimbursement Request</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/13Pg0GCAqe5-UOZrSnH2T4hIl80XLRLHR/view" target="_blank"><span class="link-num">03</span><span class="link-text">SMC Cash Collection Form</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1m5oazRtQEeYNfLrgb9wll-_nR1_gxfBr/view" target="_blank"><span class="link-num">04</span><span class="link-text">SMC Cash Handling Policy</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/152itYpdsgy7f4LU0t1koR3NVOYWl02Df/view" target="_blank"><span class="link-num">05</span><span class="link-text">SMCOC Purchasing Procedure</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1G-cr2p7mnVzO3bWMOV95lY5FubuNobYY/view" target="_blank"><span class="link-num">06</span><span class="link-text">SMCOC Maintenance Procedure</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://forms.gle/DvkEbLpxTAShTySQ9" target="_blank"><span class="link-num">07</span><span class="link-text">Facility Maintenance Request</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div><!-- MARKETING -->
+		<div class="card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+				</div><span class="card-title">Marketing</span>
+			</div>
+			<div class="card-body">
+				<a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLSfcEtLYSyqvWaT_wmTpZUrL6cWq_zupadwq0OuDiN4WDMDjkg/viewform" target="_blank"><span class="link-num">01</span><span class="link-text">Social Media Post</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLSfLTEeqgwSHyDqQLxXsfoLeQw93gFdA6y0xW2j0pn4nfYyclw/viewform" target="_blank"><span class="link-num">02</span><span class="link-text">Newsletter Contribution</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div><!-- GOOGLE DRIVE -->
+		<div class="card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+				</div><span class="card-title">Google Drive</span>
+			</div>
+			<div class="card-body">
+				<a class="link-item" href="https://drive.google.com/drive/folders/13PxVy7NTSujpZPZqcyHftUoAqs-hRdjf?usp=sharing" target="_blank"><span class="link-num"><svg fill="none" height="13" stroke="#90CAF9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg></span> <span class="link-text">All Staff Drive</span> <span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div><!-- CALENDARS -->
+		<div class="card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><rect height="18" rx="2" width="18" x="3" y="4"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg>
+				</div><span class="card-title">Calendars</span>
+			</div>
+			<div class="card-body">
+				<a class="link-item" href="https://calendar.google.com/calendar/u/2/r?cid=Y183aDBrb2FqZWE5NTdqdmgzdXNmcmU1YjRuOEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t" target="_blank"><span class="link-num">01</span><span class="link-text">MAD Calendar 2025</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://calendar.google.com/calendar/u/2/r?cid=Y18wNDQ4MmVkYjVlZmJjMmUyM2U4ZjQ0NmY4YzlkMWQzMGQwMjJiM2U5MTRmNTI2ZTVkODczOGMzYjEwYWQ5ZGQxQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20" target="_blank"><span class="link-num">02</span><span class="link-text">Room Bookings Calendar</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div><!-- IT -->
+		<div class="card">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><rect height="14" rx="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg>
+				</div><span class="card-title">IT</span>
+			</div>
+			<div class="card-body">
+				<a class="link-item" href="https://www.jotform.com/260552274222854" target="_blank"><span class="link-num"><svg fill="none" height="13" stroke="#90CAF9" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><rect height="14" rx="2" width="20" x="2" y="3"></rect><line x1="8" x2="16" y1="21" y2="21"></line><line x1="12" x2="12" y1="17" y2="21"></line></svg></span> <span class="link-text">IT Request Form</span> <span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div><!-- PAYROLL & HR -->
+		<div class="card wide">
+			<div class="card-header">
+				<div class="card-icon">
+					<svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+				</div><span class="card-title">Payroll &amp; HR</span>
+			</div>
+			<div class="card-body two-col">
+				<a class="link-item" href="https://stmarks.elmotalent.com.au/login/" target="_blank"><span class="link-num">01</span><span class="link-text">ELMO HR &amp; Payroll</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1-cAvBJ0RXlNoPdeDd5fHvQ-X43Otn9nl/view" target="_blank"><span class="link-num">02</span><span class="link-text">Fair Work — Information Statement</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://docs.google.com/forms/d/e/1FAIpQLSedhV9Z4h-Ua4ruum8hyopAepxYNMpMV-Dex3pMfqY3VnyWUg/viewform" target="_blank"><span class="link-num">03</span><span class="link-text">Employees Injury Report</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1-Yohdj4d9mhg5UKg2NbbVpujdXb2KPtq/view" target="_blank"><span class="link-num">04</span><span class="link-text">Fair Work Fixed-Term Contract Statement</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1-QkhDLIKALEjGtumHIQnvJxMC5kxfmKB/view" target="_blank"><span class="link-num">05</span><span class="link-text">Fair Work — Casual Employment Statement</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1u173FhB31PfTQ62KSK1ep75vtZoBQ0L7/view" target="_blank"><span class="link-num">06</span><span class="link-text">Independent Schools (Teachers) Co-op MEA 2025</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a> <a class="link-item" href="https://drive.google.com/file/d/1CvFd4xra_tbOVo0ocrCZL3cFYo0PRQYf/view" target="_blank"><span class="link-num">07</span><span class="link-text">Independent Schools NSW (Professional &amp; Operational Staff) Co-op MEA 2025</span><span class="link-arrow"><svg viewBox="0 0 24 24"><line x1="5" x2="19" y1="12" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		Saint Mark's Coptic Orthodox College — Staff Portal — All links open in a new tab
+	</div>
+</div></body></html>
